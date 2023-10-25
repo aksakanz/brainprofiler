@@ -26,13 +26,13 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link active" href="#">Job Vacancy</a>
+						<a class="nav-link active" href="<?= site_url('index'); ?>">Job Vacancy</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Company</a>
+						<a class="nav-link" href="<?= site_url('index/company'); ?>">Company</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link" href="<?= site_url('index/contact'); ?>">Contact</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="<?= site_url('index/login'); ?>">Masuk</a>

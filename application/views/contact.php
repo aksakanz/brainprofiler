@@ -26,13 +26,13 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link active" href="<?= site_url('index'); ?>">Job Vacancy</a>
+						<a class="nav-link " href="<?= site_url('index'); ?>">Job Vacancy</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="<?= site_url('index/company'); ?>">Company</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="<?= site_url('index/contact'); ?>">Contact</a>
+						<a class="nav-link active" href="<?= site_url('index/contact'); ?>">Contact</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="<?= site_url('index/login'); ?>">Masuk</a>
@@ -44,16 +44,37 @@
 
 
 
+	<style>
+		.container {
+			text-align: center;
+		}
 
+		.row {
+			display: inline-block;
+			padding: 10px;
+		}
+	</style>
 
 	<div class="container mt-5">
 		<center>
-			<i class="fas fa-check-circle fa-4x text-success"></i>
-			<br>
-			<br>
-			<h3>Selamat pendaftaran anda sudah kami terima, halaman ini akan berpindah dalam <span id="countdown">5</span> detik</h3>
+			<h5>Follow Us On</h5>
 		</center>
+		<hr>
+		<div class="container">
+			<div class="row">
+				<a href="#"><i class="fab fa-linkedin-in fa-4x" style="color: #0082ca;"></i></a>
+			</div>
+
+			<div class="row">
+				<a href="#"><i class="fab fa-instagram fa-4x" style="color: #ac2bac;"></i></a>
+			</div>
+
+			<div class="row">
+				<a href="#"><i class="fab fa-whatsapp fa-4x" style="color: #25d366;"></i></a>
+			</div>
+		</div>
 	</div>
+
 
 
 
@@ -62,28 +83,6 @@
 			<p>&copy; <?php echo date('Y'); ?> BrainProfiler. All rights reserved.</p>
 		</div>
 	</footer>
-	<script>
-		function countdownRedirect(seconds, url) {
-			var countdownElement = document.getElementById('countdown');
-
-			var interval = setInterval(function() {
-				seconds--;
-				countdownElement.textContent = seconds;
-
-				if (seconds <= 0) {
-					clearInterval(interval);
-					window.location.href = url;
-				}
-			}, 1000);
-		}
-
-		countdownRedirect(5, 'login');
-	</script>
-</body>
-
-</html>
-
-
 
 </body>
 

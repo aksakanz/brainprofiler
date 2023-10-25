@@ -137,6 +137,16 @@ class Index extends CI_Controller
 		}
 	}
 
+	public function contact()
+	{
+		$this->load->view('contact');
+	}
+
+	public function company()
+	{
+		$this->load->view('company');
+	}
+
 	public function successRegist()
 	{
 		$this->load->view('successregist');
